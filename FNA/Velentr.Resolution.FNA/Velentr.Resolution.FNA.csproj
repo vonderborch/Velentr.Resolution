@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Velentr.Resolution.FNA</AssemblyName>
+    <RootNamespace>Velentr.Resolution</RootNamespace>
+    <Platforms>x64</Platforms>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Christian Webber</Authors>
+    <Company>Christian Webber</Company>
+    <RepositoryUrl>https://github.com/vonderborch/Velentr.Resolution</RepositoryUrl>
+    <PackageTags>FNA, </PackageTags>
+    <Description>A library to </Description>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/vonderborch/Velentr.Resolution</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DefineConstants>TRACE;FNA</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DefineConstants>FNA</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\..\release\FNA\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="fnalibs" Version="21.7.0" developmentDependency="true" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FNA\FNA.Core.csproj" PrivateAssets="All" />
+  </ItemGroup>
+  <Import Project="..\..\Velentr.Resolution\Velentr.Resolution.projitems" Label="Shared" />
+</Project>
