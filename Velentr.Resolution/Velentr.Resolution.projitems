@@ -9,5 +9,11 @@
     <Import_RootNamespace>Velentr.Resolution</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BoxingMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResolutionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResolutionSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ScreenMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VirtualResolutionMode.cs" />
   </ItemGroup>
 </Project>

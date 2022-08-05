@@ -48,12 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="fnalibs" Version="21.7.0" />
+    <PackageReference Include="SharpFont.NetStandard" Version="1.0.5" />
     <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="6.0.1" />
     <PackageReference Include="Velentr.Debugging" Version="1.0.0" />
+    <PackageReference Include="Velentr.Font.FNA" Version="1.2.9" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FNA\FNA.Core.csproj" />
-    <ProjectReference Include="..\Velentr.BASE.FNA\Velentr.BASE.FNA.csproj" />
+    <ProjectReference Include="..\Velentr.Resolution.FNA\Velentr.Resolution.FNA.csproj" />
   </ItemGroup>
   <ItemGroup>
     <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
